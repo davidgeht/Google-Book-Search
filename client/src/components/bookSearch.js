@@ -1,45 +1,20 @@
-import React, { useState } from 'react';
+import React, { Component } from "react";
 
-function SearchForm(props) {
-  const [query, SetQuery] = useState('');
-
-  const handleFormSubmit = e => {
-    e.preventDefault();
-
-    if (props.onFormSubmit) {
-      props.onFormSubmit(query);
+class BookSearch extends Component{
+    render(){
+        return(
+            <div className="searchBar">
+                <from>
+                    <div class="form-group">
+                        <label for="booksearch">Book Search</label>
+                        <input type="booksearc" class="form-control" id="searchbar" aria-describedby="searchHelp"/>
+                        <small id="searchHelp" class="form-text text-muted">Search for whichever book you'd like !</small>
+                        <button>Search</button>
+                    </div>
+                </from>
+            </div>
+        )
     }
-  };
-  return (
-    <div className='container'>
-      <div className='row'>
-        <form className='col s12' onSubmit={handleFormSubmit}>
-          <h5>Books</h5>
-          <div className='row'>
-            <div className='input-field col s12'>
-              <input
-                placeholder='Title'
-                id='firstName'
-                type='text'
-                className='validate'
-                autoComplete='off'
-                value={query}
-                onChange={e => SetQuery(e.target.value)}
-              />
-              {/* <label htmlFor='firstName'>Book</label> */}
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col s12'>
-              <button className='col s2 btn right indigo darken-4'>
-                Search
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
 }
 
-export default SearchForm;
+export default BookSearch
