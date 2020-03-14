@@ -1,0 +1,15 @@
+.navbar-brand {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.navbar-nav {
+  display: inline-block;
+}
+
+.navbar-nav .nav-link {
+  display: inline-block;
+  margin-left: 1em;
+}

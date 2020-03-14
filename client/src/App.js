@@ -1,29 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Route,
-} from "react-router-dom";
-import Header from "./components/header";
-import Search from "./components/search";
-import Saved from "./context/saved";
-import NavBar from "./components/navbar";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <Router>
-    <div className="App">
-      <NavBar/>
-      <Header/>
-      <Route exact path="/search">
-      <Search/>
-      </Route>
-      <Route path="/saved">
-      <Saved/>
-      </Route>
+    <div>
+      <Nav />
+      <Router>
+        <Route exact path="/" component={Search} />
+        <Route exact path="/saved" component={Saved} />
+      </Router>
     </div>
-    </Router>
   );
 }
 
