@@ -1,4 +1,4 @@
-# Google Books React Search
+# Google Books Search
 
 
 ## Introduction
@@ -7,7 +7,7 @@ Look up for your favourite titles on Google Books and save a list of them into y
 
 This web app runs on MongoDB, Express, React, and Node.js aka MERN.
 
-[Live Demo](https://sheltered-tundra-28516.herokuapp.com/)
+[Live Demo]( https://polar-waters-45969.herokuapp.com/)
 
 
 ## Installation
@@ -27,6 +27,3 @@ This web app runs on MongoDB, Express, React, and Node.js aka MERN.
 4. Click on the `Save` button below a book save it to your own database.
 
 
-## Preview
-
-![Google Books React Search](__readme/preview.png)
